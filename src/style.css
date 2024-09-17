@@ -1,0 +1,25 @@
+  .centered-content {
+    margin-top: 50px;
+  }
+
+  .push {
+    margin-top: 5px;
+  }
+
+  a {
+    color: 'cornflowerblue';
+  }
+  
+  .kitty {
+    font-family:fantasy;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    background-color:burlywood;
+  }
+
+  li:before { 
+    content: '\1F365'; 
+    margin-left: -20px; 
+    margin-right: 10px; 
+  } 
