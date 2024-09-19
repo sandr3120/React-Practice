@@ -1,6 +1,4 @@
-import { useState } from "react"
-
-const link = "https://en.wikipedia.org/wiki/Cat"
+import { useState } from "react";
 
 function Middle() {
     const [num,setNum] = useState(0)
@@ -14,7 +12,7 @@ function Middle() {
         in Shillourokambos, southern Cyprus, dating to about 7500–7200 BC.</p>
         <figure>
         <figcaption className="blockquote-footer">
-        Read more at: <cite title="Wikipedia">{link}</cite>
+        Read more at: <cite title="Source">Wikipedia</cite>
         </figcaption>
         </figure>
         <div class="card text-center">

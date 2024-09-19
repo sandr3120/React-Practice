@@ -5,19 +5,21 @@ import Quote from '../partials/First'
 import Middle from '../partials/Middle'
 import Footer from '../partials/Footer'
 import Props from '../partials/Props'
+import Header from '../partials/Header';
 
-const link = "https://imgs.search.brave.com/Bwz2k5sdQ9KVFr8zWIdkPUamLzz_qBxUAy3PD0WBFf4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FjL2Qy/LzZjL2FjZDI2Y2Fi/NTkxODY2N2IwN2Yx/ZjBlZGVlYTQzOTg2/LmpwZw";
+const link = "https://tinyurl.com/2jrjy6pp";
 const sty1 = { maxWidth: '580px' };
 
 function Home() {
     return (
         <>
-            <div className="container centered-content">
+            <Header />
+            <div className="container centered-content pt-4">
                 <div className="row">
                     <div className="col-sm-6 mb-3 mb-sm-0">
                         <div className="card">
                             <div className="card-body">
-                                <h1 className="kitty">Your Ultimate Guide to All Things Cats</h1>
+                                <h1 className="kitty text-center">Your Ultimate Guide to All Things Cats</h1>
                                 <h6 className="card-subtitle mb-2 text-body-secondary">Welcome to React</h6>
                                 <Quote />
                                 <Middle />
@@ -54,8 +56,8 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <Footer />
             </div>
+            <Footer />
         </>
     )
 }

@@ -1,12 +1,18 @@
-const sty2 = { backgroundColor: 'rgba(0, 0, 0, 0.05)' }
-const link = "https://en.wikipedia.org/wiki/Cat"
-
 function Footer() {
     return (
         <>
-            <div className="push">
-                <div className="text-center p-3" style={sty2}> © Copyright 2024: <a class="text-reset fw-bold" href={link}>Wikipedia.org</a>
-                </div>
+            <div class="b-example-divider pt-1"></div>
+            <div class="container">
+                <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Features</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Pricing</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">FAQs</a></li>
+                        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">About</a></li>
+                    </ul>
+                    <p class="text-center text-muted">&copy; 2024 Company, Inc</p>
+                </footer>
             </div>
         </>)
 }

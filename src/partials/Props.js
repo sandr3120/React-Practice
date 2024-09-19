@@ -2,7 +2,7 @@ const deco = {
     color: 'firebrick'
 }
 function Props(props) {
-    return <li style={deco}>{props.clr}</li>
+    return <li className='list' style={deco}>{props.clr}</li>
 }
 
 export default Props
