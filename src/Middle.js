@@ -1,6 +1,9 @@
+import { useState } from "react"
+
 const link = "https://en.wikipedia.org/wiki/Cat"
 
 function Middle() {
+    const [num,setNum] = useState(0)
     return (
         <>
         <p>The cat (<em>Felis catus</em>), also referred to as domestic cat or house cat, is a small domesticated carnivorous mammal. 
@@ -14,6 +17,19 @@ function Middle() {
         Read more at: <cite title="Wikipedia">{link}</cite>
         </figcaption>
         </figure>
+        <div class="card text-center">
+            <div class="card-body">
+                <p>Purr Counter: <span class="badge rounded-pill text-bg-warning">{num}</span></p>
+                    <div class="card-footer btn-toolbar justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" className="btn btn-outline-success btn-sm" onClick={()=>setNum(num+1)}>+ Up</button>
+                            </div>
+                            <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <button type="button" className="btn btn-outline-danger btn-sm" onClick={()=>setNum(num-1)}>- Down</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
         </>
     )
 }
